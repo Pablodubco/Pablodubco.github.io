@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Portfolio - Contact</title>
+              
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+              
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+
+<!--_________________________Navbar BEGIN____________________________-->
+<div id = "navbarBackground"> <!--Wrapper that will serve as the navbar background-->
+
+    <div id = "navbarWrapper"> <!--Wrapper for adjusting navbar width-->
+
+        <nav class="navbar navbar-expand-md navbar-light">
+            
+            
+            <a class="navbar-brand text-white" href="#">Pablo Dubcovsky</a>
+
+            <!--Collapsible hamburguer button with About, Portfolio and Contact links-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarElements" aria-controls="navbarElements" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Navbar elements and links-->
+            <div class="collapse navbar-collapse" id="navbarElements">
+                <ul class="navbar-nav ml-auto float-sm-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="MiddleNavButton" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</div>
+<!--_________________________Navbar END____________________________-->
+
+<!-- ___________________________MAIN Container BEGIN_____________________________ -->
+<div class="container" id="mainContainer"> 
+
+        <div class ="row udSectionHeader mr-sm-auto ml-sm-auto">
+            <h1 class="font-weight-bold">Contact</h1>
+        </div>
+
+        <!--First row with column and form-->
+        <div class="row">
+            <div class="col-12">
+
+                <form>
+                    
+                    <div class="form-group">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" Namedby="nameHelp" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="5" placeholder="Hello Pablo, I would like to discuss..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id ="ContactSubmitButton">Submit</button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+<!-- _________________________MAIN Container END________________________________ -->    
+
+<div class="emptyBottomSpace"></div> <!--Pushes the footer down, so there's empty space for the content-->
+
+<footer class="footer">
+    <div id="FooterThinLine"></div>
+    <div id="FooterThickLine">Copyright ©</div>
+</footer>
+
+<!--Import Bootstrap JavaScript for dynamic elements-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

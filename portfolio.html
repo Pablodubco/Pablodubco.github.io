@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Portfolio - Contact</title>
+                          
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+                          
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+
+<!--_________________________Navbar BEGIN____________________________-->
+<div id = "navbarBackground"> <!--Wrapper that will serve as the navbar background-->
+
+    <div id = "navbarWrapper"> <!--Wrapper for adjusting navbar width-->
+
+        <nav class="navbar navbar-expand-md navbar-light">
+            
+            
+            <a class="navbar-brand text-white" href="#">Pablo Dubcovsky</a>
+
+            <!--Collapsible hamburguer button with About, Portfolio and Contact links-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarElements" aria-controls="navbarElements" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Navbar elements and links-->
+            <div class="collapse navbar-collapse" id="navbarElements">
+                <ul class="navbar-nav ml-auto float-sm-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="MiddleNavButton" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</div>
+<!--_________________________Navbar END____________________________-->
+
+
+<!-- ___________________________MAIN Container BEGIN_____________________________ -->
+    <div class="container" id="mainContainer"> 
+
+        <div class ="row udSectionHeader mx-sm-auto">
+            <h1 class="font-weight-bold">Portfolio</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <!--First row with 2 columns (1 on mobile)-->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card text-white mx-5 my-5">
+                            <a href="https://pablodubco.github.io/WordGuessGame/">
+                                <img class="card-img" src="assets/images/Hangman.jpg" alt="Hangman Pic">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-center udPortfolioProjectLabel">Hangman</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card text-white mx-5 my-5">
+                            <a href="https://pablodubco.github.io/unit-4-game/">
+                                <img class="card-img" src="assets/images/RPGGame.jpg" alt="RPG Game Pic">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-center udPortfolioProjectLabel">RPG Game</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Second row with 2 columns (1 on mobile)-->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card text-white mx-5 my-5">
+                            <a href="https://pablodubco.github.io/TriviaGame/">
+                                <img class="card-img" src="assets/images/Trivia.jpg" alt="Trivia Pic">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-center udPortfolioProjectLabel">Trivia</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card text-white mx-5 my-5">
+                            <img class="card-img" src="assets/images/Rutgers.jpg" alt="Rutgers Pic">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title text-center udPortfolioProjectLabel">Rutgers Info Widget</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Third row with 2 columns (2nd column is empty)-->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card text-white mx-5 my-5">
+                            <img class="card-img" src="assets/images/RPS.jpg" alt="RockPaperScissors Pic">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title text-center udPortfolioProjectLabel">Rock Paper Scissors</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- _________________________MAIN Container END________________________________ -->    
+
+<div class="emptyBottomSpace"></div> <!--Pushes the footer down, so there's empty space for the content-->
+
+<footer class="footer">
+    <div id="FooterThinLine"></div>
+    <div id="FooterThickLine">Copyright ©</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
