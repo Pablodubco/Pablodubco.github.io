@@ -2,8 +2,7 @@
 html {
     position: relative;
     min-height: 100%;
-  }
-
+}
 body{
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
     line-height: 150%;
@@ -12,17 +11,14 @@ body{
     background-image: url("../images/bg_packman.jpg");
     margin-bottom: 39px; /*Footer height*/
 }
-
 h1,h2,h3,h4,h5,h6{
     font-family: 'Open Sans', sans-serif;
     color: rgb(55, 125, 190);
     font-style: normal;
 }
-
 h1{
      font-size: 32px;
 }
-
 a{
      font-family: 'Nunito Sans', sans-serif;
      color: white;
@@ -32,7 +28,6 @@ a{
 .wrapper {
     display: flex;
     width: 100%;
-    /*align-items: stretch;*/
 }
 
 .bg-darker{
@@ -40,8 +35,7 @@ a{
 }
 
 .udselected{
-    background-color:rgb(55, 125, 190);
-    color: white !important;
+    color: rgb(55, 125, 190) !important;
     text-decoration: none;
 }
 
@@ -77,20 +71,23 @@ a{
 }
 
 .nav-link:hover{
-    color: rgb(55, 125, 190) !important; 
+    background-color:rgb(55, 125, 190);
+    color: white !important;
+    text-decoration: none;
 }
 
-.udPortfolioProjectLabel{
-    font-family: 'Arial', sans-serif;
-    font-size: 20px;
-    background: rgb(55, 125, 190);
-    padding: 5%;
-    margin-top: 60%;
-    color:white;
+.carousel-caption{
+    opacity: 0;
+    background-color:rgba(0,0,0,0.75);
 }
 
-.udPortfolioProjectLabel:hover{
-    color: rgb(157, 230, 230);
+.carousel-caption:hover{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.udOverlayButtons{
+    background-color: transparent;
 }
 
 .emptyBottomSpace{
@@ -111,12 +108,11 @@ a{
 }
 
 .sidebar-header{
-    background: rgb(55, 125, 190);
     padding: 13px;
 }
 
 .sidebar-list{
-    margin: 6px 6px 0px 0px;
+    margin: 6px 0px 0px 0px;
 }
 
 .sideudselected{
@@ -125,18 +121,14 @@ a{
     text-decoration: none;
 }
 
-.side-link:hover{
-    background-color:rgb(37, 86, 131);
-    color: white !important;
-    text-decoration: none;
-}
-
 .side-link{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
-.carousel-caption{
-    background-color:rgba(0,0,0,0.75);
+.side-link:hover{
+    background-color:white ;
+    color: rgb(55, 125, 190) !important;
+    text-decoration: none;
 }
 
 .textHighlight{
@@ -174,11 +166,6 @@ a{
     background: #ffffff;
 }
 
-#navbarWrapper,
-#mainContainer{
-    /*margin: auto;*/
-}
-
 #MiddleNavButton{
     border-left-color: rgb(200,200,200);
     border-right-color: rgb(200,200,200);
@@ -202,6 +189,10 @@ a{
     font-size: 18px;
 }
 
+#ContactSubmitButton:hover{
+    background: rgb(70, 153, 231);
+}
+
 #FooterThinLine {
     background: rgb(55, 125, 190);
     height: 5px;
@@ -220,7 +211,7 @@ a{
     
     /*Center images and adjust on-screen content to the full width*/
     .udResizeText{
-        font-size: x-small !important;
+        font-size: 18px !important;
     }
     .udSectionHeader{
         align-items: center !important;
@@ -248,7 +239,7 @@ a{
         color:white;
     }
     .udResizeText{
-        font-size: small !important;
+        font-size: 18px !important;
     }
     #sidebar {
         width: 25%;
@@ -260,8 +251,15 @@ a{
     }
     #mainContainer{
         width: 100%;
-        margin: 0px auto 40px auto;
+        margin: 0px auto 0px auto;
         background:#ffffff;
         border-color:#dddddd;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .udResizeText{
+        font-size: small !important;
+        line-height: 120%;
     }
 }

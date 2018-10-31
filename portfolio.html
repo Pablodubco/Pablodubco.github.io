@@ -28,17 +28,17 @@
             </div>
             <br>
             <ul class="list-unstyled components sidebar-list">
-                <a href="index.html">
+                <a style="text-decoration:none" href="index.html">
                     <li class="side-link py-2">
                         About
                     </li>
                 </a>
-                <a href="portfolio.html">
+                <a style="text-decoration:none" href="portfolio.html">
                     <li class="side-link py-2 sideudselected">
                         Portfolio
                     </li>
                 </a>
-                <a href="contact.html">
+                <a style="text-decoration:none" href="contact.html">
                     <li class="side-link py-2">
                         Contact
                     </li>
@@ -88,10 +88,10 @@
                 <br>
                 <div class="row">
                     <div class="col-12 mx-auto">
-                        <!-- Big Portfolio cards with links -->
-                        <div id="carouselPortfolioBig" class="carousel slide" data-ride="carousel">
+                        <!-- Big Portfolio cards carousel with links -->
+                        <div id="carouselPortfolioBig" class="carousel slide d-md-none d-block" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouselPortfolioBig" data-slide-to="0" class="active">lalala</li>
+                                <li data-target="#carouselPortfolioBig" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselPortfolioBig" data-slide-to="1"></li>
                                 <li data-target="#carouselPortfolioBig" data-slide-to="2"></li>
                                 <li data-target="#carouselPortfolioBig" data-slide-to="3"></li>
@@ -100,10 +100,10 @@
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" src="assets/images/portfolio_wordguess.jpg" alt="Word Guess Pic">
                                     <div class="carousel-caption">
-                                        <p class="udResizeText">Word Guess Game with pure <span class="textHighlight">JavaScript</span>. For desktop and laptops.</p>
+                                        <p class="udResizeText">Word Guess Game using pure <span class="textHighlight">JavaScript</span>. For desktop and laptops.</p>
                                         <div class="row justify-content-center">
                                             <div class="col-lg-3 col-md-4 col-6">
-                                                <a class="btn btn-outline-light border-0" href="https://pablodubco.github.io/WordGuessGame/" target="_blank"><i class="fa fa-play-circle-o"></i> Play</a>
+                                                <a class="btn btn-outline-light border-0" href="https://pablodubco.github.io/WordGuessGame" target="_blank"><i class="fa fa-play-circle-o"></i> Play</a>
                                             </div>
                                             <div class="col-lg-3 col-md-4 col-6">
                                                 <a class="btn btn-outline-light border-0" href="https://github.com/Pablodubco/WordGuessGame" target="_blank"><i class="fa fa-github"></i> Project</a>
@@ -117,7 +117,7 @@
                                         <p class="udResizeText">RPG Battle Engine built entirely with <span class="textHighlight">JavaScript</span> and <span class="textHighlight">JQuery</span>. All viewports.</p>
                                         <div class="row justify-content-center">
                                             <div class="col-lg-3 col-md-4 col-6">
-                                                <a class="btn btn-outline-light border-0" href="https://pablodubco.github.io/unit-4-game/" target="_blank"><i class="fa fa-play-circle-o"></i> Play</a>
+                                                <a class="btn btn-outline-light border-0" href="https://pablodubco.github.io/unit-4-game" target="_blank"><i class="fa fa-play-circle-o"></i> Play</a>
                                             </div>
                                             <div class="col-lg-3 col-md-4 col-6">
                                                 <a class="btn btn-outline-light border-0" href="https://github.com/Pablodubco/unit-4-game" target="_blank"><i class="fa fa-github"></i> Project</a>
@@ -131,7 +131,7 @@
                                         <p class="udResizeText">Timed Quiz app using <span class="textHighlight">JavaScript</span>, <span class="textHighlight">JQuery</span> and <span class="textHighlight">Timers</span>. All viewports.</p>
                                         <div class="row justify-content-center">
                                             <div class="col-lg-3 col-md-4 col-6">
-                                                <a class="btn btn-outline-light border-0" href="https://pablodubco.github.io/TriviaGame/" target="_blank"><i class="fa fa-play-circle-o"></i> Play </a>
+                                                <a class="btn btn-outline-light border-0" href="https://pablodubco.github.io/TriviaGame" target="_blank"><i class="fa fa-play-circle-o"></i> Play </a>
                                             </div>
                                             <div class="col-lg-3 col-md-4 col-6">
                                                 <a class="btn btn-outline-light border-0" href="https://github.com/Pablodubco/TriviaGame" target="_blank"><i class="fa fa-github"></i> Project</a>
@@ -145,7 +145,7 @@
                                         <p class="udResizeText">Gif search app using Giphy <span class="textHighlight">API</span>, <span class="textHighlight">AJAX</span>, and <span class="textHighlight">CSS animations</span>. All viewports.</p>
                                         <div class="row justify-content-center">
                                             <div class="col-lg-3 col-md-4 col-6">
-                                                <a class="btn btn-outline-light border-0" href="https://pablodubco.github.io/GifMeThat/" target="_blank"><i class="fa fa-play-circle-o"></i> Play</a>
+                                                <a class="btn btn-outline-light border-0" href="https://pablodubco.github.io/GifMeThat" target="_blank"><i class="fa fa-play-circle-o"></i> Play</a>
                                             </div>
                                             <div class="col-lg-3 col-md-4 col-6">
                                                 <a class="btn btn-outline-light border-0" href="https://github.com/Pablodubco/GifMeThat" target="_blank"><i class="fa fa-github"></i> Project</a>
@@ -163,16 +163,80 @@
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
+                        <!-- Big portfolio slides END-->
+                        <!-- Small portfolio cards BEGIN-->
+                        <div class="d-none d-md-block"> <!-- Responsive wrapper to hide on small screens BEGIN-->
+                        <div class="row py-3 d-md-">
+                            <div class="col-6">
+                                <img class="w-100" src="assets/images/portfolio_wordguess.jpg" alt="Word Guess Pic">
+                                <div class="carousel-caption">
+                                    <p class="udResizeText">Word Guess Game using <span class="textHighlight">JavaScript</span>. For desktop and laptops.</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <a class="btn btn-outline-light border-0 udResizeText" href="https://pablodubco.github.io/WordGuessGame" target="_blank"><i class="fa fa-play-circle-o"></i> Play</a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <a class="btn btn-outline-light border-0 udResizeText" href="https://github.com/Pablodubco/WordGuessGame" target="_blank"><i class="fa fa-github"></i> Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <img class="w-100" src="assets/images/portfolio_rpgbattle.jpg" alt="Second slide">
+                                <div class="carousel-caption">
+                                    <p class="udResizeText">RPG Battle Engine built entirely with <span class="textHighlight">JavaScript</span> and <span class="textHighlight">JQuery</span>. All viewports.</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <a class="btn btn-outline-light border-0 udResizeText" href="https://pablodubco.github.io/unit-4-game" target="_blank"><i class="fa fa-play-circle-o"></i> Play</a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <a class="btn btn-outline-light border-0 udResizeText" href="https://github.com/Pablodubco/unit-4-game" target="_blank"><i class="fa fa-github"></i> Project</a>
+                                        </div>
+                                    </div>
+                                </div>                                            
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-6">
+                                <img class="d-block w-100" src="assets/images/portfolio_trivianimation.jpg" alt="Third slide">
+                                <div class="carousel-caption">
+                                    <p class="udResizeText">Timed Quiz app using <span class="textHighlight">JavaScript</span>, <span class="textHighlight">JQuery</span> and <span class="textHighlight">Timers</span>. All viewports.</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <a class="btn btn-outline-light border-0 udResizeText" href="https://pablodubco.github.io/TriviaGame" target="_blank"><i class="fa fa-play-circle-o"></i> Play </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <a class="btn btn-outline-light border-0 udResizeText" href="https://github.com/Pablodubco/TriviaGame" target="_blank"><i class="fa fa-github"></i> Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <img class="d-block w-100" src="assets/images/portfolio_gifmethat.jpg" alt="Third slide">
+                                <div class="carousel-caption">
+                                    <p class="udResizeText">Gif search app using Giphy <span class="textHighlight">API</span>, <span class="textHighlight">AJAX</span>, and <span class="textHighlight">CSS animations</span>. All viewports.</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <a class="btn btn-outline-light border-0 udResizeText" href="https://pablodubco.github.io/GifMeThat" target="_blank"><i class="fa fa-play-circle-o"></i> Play</a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <a class="btn btn-outline-light border-0 udResizeText" href="https://github.com/Pablodubco/GifMeThat" target="_blank"><i class="fa fa-github"></i> Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div> <!-- Responsive wrapper to hide on small screens END-->
+                        <!-- Small portfolio cards END-->
                     </div>
                 </div>
             </div>
         <!-- _________________________MAIN Container END________________________________ -->    
 
         <div class="emptyBottomSpace"></div> <!--Pushes the footer down, so there's empty space for the content-->
-
         <footer class="footer">
             <div id="FooterThinLine"></div>
-            <div id="FooterThickLine">Copyright ©</div>
+            <div class="bg-darker text-white text-center" id="FooterThickLine">Copyright © Pablo Dubcovsky 2018</div>
         </footer>
     </div>
 </div>
