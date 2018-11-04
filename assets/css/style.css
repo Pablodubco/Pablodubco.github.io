@@ -135,6 +135,67 @@ a{
     color:rgb(68, 155, 236);
 }
 
+.btnLinkedin{
+    color: white;
+    background-color: rgb(0,119,181);
+}
+.btnLinkedin:hover{
+    background-color: rgb(0, 88, 136);
+}
+
+.btnGithub{
+    color: white;
+    background-color: rgb(36,41,46);
+}
+.btnGithub:hover{
+    background-color: rgb(54, 62, 70);
+}
+
+.btnEnvelope{
+    color: white;
+    background-color: rgb(254,198,13);
+}
+.btnEnvelope:hover{
+    background-color: rgb(197, 154, 12);
+}
+
+.input-group-text{
+    width: 100px;
+    text-align: center;
+}
+
+/*------------Animation controls-----------*/
+.udAnimOrder0{
+    animation-duration: 0.7s !important;
+}
+.udAnimOrder1{
+    animation-duration: 1.4s !important;
+}
+.fadeInRight{
+    animation:fadeInRight forwards;
+}
+.fadeOutRight{
+    animation:fadeOutRight forwards;
+}
+.fadeInLeft{
+    animation:fadeInLeft forwards;
+}
+.fadeOutLeft{
+    animation:fadeOutLeft forwards;
+}
+.fadeInDown{
+    animation:fadeInDown forwards;
+}
+.fadeOutUp{
+    animation:fadeOutUp forwards;
+}
+.bounceIn{
+    animation:bounceIn forwards;
+}
+.bounceOut{
+    animation:bounceOut forwards;
+}
+
 #sidebar.active {
     margin-left: -200px;
 }
@@ -182,14 +243,14 @@ a{
     padding-bottom: 20px;
 }
 
-#ContactSubmitButton{
+#ContactSubmitButton,#AboutPortfolioButton{
     background: rgb(55, 125, 190);
     color: white;
     border-style: none;
     font-size: 18px;
 }
 
-#ContactSubmitButton:hover{
+#ContactSubmitButton:hover,#AboutPortfolioButton:hover{
     background: rgb(70, 153, 231);
 }
 
@@ -205,7 +266,104 @@ a{
     padding: 15px;
 }
 
-/*-----------------------------Mobile devices settings------------------------------------*/
+/*-----------------------------Animations-------------------------------------------*/
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeOutRight {
+    0% {opacity: 1;}
+    50%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    75% {
+        opacity: 0.5;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeOutLeft {
+    0% {opacity: 1;}
+    100% {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+    }
+}
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    50% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeOutUp {
+    0% {opacity: 1;}
+    100% {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+}
+@keyframes bounceIn {
+    0%,20%,40%,60%,80%,100% {animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+    0%,40% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    60% {transform: scale3d(1.1, 1.1, 1.1);}
+    70% {transform: scale3d(0.9, 0.9, 0.9);}
+    80% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    90% {
+        opacity: 1;
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes bounceOut {
+    20% {transform: scale3d(0.9, 0.9, 0.9);}
+    50%,55% {
+      opacity: 1;
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+/*-----------------------------Responsive settings------------------------------------*/
 
 @media only screen and (max-width: 576px) {
     

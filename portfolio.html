@@ -28,17 +28,17 @@
             </div>
             <br>
             <ul class="list-unstyled components sidebar-list">
-                <a style="text-decoration:none" href="index.html">
+                <a style="text-decoration:none" class="udAnimateExit" href="index.html">
                     <li class="side-link py-2">
                         About
                     </li>
                 </a>
-                <a style="text-decoration:none" href="portfolio.html">
+                <a style="text-decoration:none" class="udAnimateExit" href="portfolio.html">
                     <li class="side-link py-2 sideudselected">
                         Portfolio
                     </li>
                 </a>
-                <a style="text-decoration:none" href="contact.html">
+                <a style="text-decoration:none" class="udAnimateExit" href="contact.html">
                     <li class="side-link py-2">
                         Contact
                     </li>
@@ -60,13 +60,13 @@
                         <div class="collapse navbar-collapse" id="navbarElements">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">About</a>
+                                    <a class="nav-link udAnimateExit" href="index.html">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link udselected" id="MiddleNavButton" href="portfolio.html">Portfolio</a>
+                                    <a class="nav-link udselected udAnimateExit" id="MiddleNavButton" href="portfolio.html">Portfolio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link udAnimateExit" href="contact.html">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -78,18 +78,18 @@
 
 
         <!-- ___________________________MAIN Container BEGIN_____________________________ -->
-            <div class="container" id="mainContainer"> 
+            <div class="container udAnimOrder0 fadeInLeft" id="mainContainer"> 
                 <!-- Header-->
                 <div class="row" style="background-image: url('assets/images/bg_portfolio.jpg');height: 150px;">
                     <div class="col-12 text-center text-sm-right ">
-                        <h1 class="font-weight-bold text-white" id="udHeader">P O R T F O L I O</h1>
+                        <h1 class="font-weight-bold text-white udAnimated delay1 fadeInDown" id="udHeader">P O R T F O L I O</h1>
                     </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class="col-12 mx-auto">
                         <!-- Big Portfolio cards carousel with links -->
-                        <div id="carouselPortfolioBig" class="carousel slide d-md-none d-block" data-ride="carousel">
+                        <div id="carouselPortfolioBig" class="carousel slide d-md-none d-block udAnimOrder0 fadeInRight" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselPortfolioBig" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselPortfolioBig" data-slide-to="1"></li>
@@ -165,10 +165,10 @@
                         </div>
                         <!-- Big portfolio slides END-->
                         <!-- Small portfolio cards BEGIN-->
-                        <div class="d-none d-md-block"> <!-- Responsive wrapper to hide on small screens BEGIN-->
+                        <div class="d-none d-md-block udAnimOrder1 fadeInRight"> <!-- Responsive wrapper to hide on small screens BEGIN-->
                         <div class="row py-3 d-md-">
                             <div class="col-6">
-                                <img class="w-100" src="assets/images/portfolio_wordguess.jpg" alt="Word Guess Pic">
+                                <img class="w-100 shadow-lg" src="assets/images/portfolio_wordguess.jpg" alt="Word Guess Pic">
                                 <div class="carousel-caption">
                                     <p class="udResizeText">Word Guess Game using <span class="textHighlight">JavaScript</span>. For desktop and laptops.</p>
                                     <div class="row justify-content-center">
@@ -182,7 +182,7 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <img class="w-100" src="assets/images/portfolio_rpgbattle.jpg" alt="Second slide">
+                                <img class="w-100 shadow-lg" src="assets/images/portfolio_rpgbattle.jpg" alt="Second slide">
                                 <div class="carousel-caption">
                                     <p class="udResizeText">RPG Battle Engine built entirely with <span class="textHighlight">JavaScript</span> and <span class="textHighlight">JQuery</span>. All viewports.</p>
                                     <div class="row justify-content-center">
@@ -198,7 +198,7 @@
                         </div>
                         <div class="row py-3">
                             <div class="col-6">
-                                <img class="d-block w-100" src="assets/images/portfolio_trivianimation.jpg" alt="Third slide">
+                                <img class="w-100 shadow-lg" src="assets/images/portfolio_trivianimation.jpg" alt="Third slide">
                                 <div class="carousel-caption">
                                     <p class="udResizeText">Timed Quiz app using <span class="textHighlight">JavaScript</span>, <span class="textHighlight">JQuery</span> and <span class="textHighlight">Timers</span>. All viewports.</p>
                                     <div class="row justify-content-center">
@@ -212,7 +212,7 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <img class="d-block w-100" src="assets/images/portfolio_gifmethat.jpg" alt="Third slide">
+                                <img class="w-100 shadow-lg" src="assets/images/portfolio_gifmethat.jpg" alt="Third slide">
                                 <div class="carousel-caption">
                                     <p class="udResizeText">Gif search app using Giphy <span class="textHighlight">API</span>, <span class="textHighlight">AJAX</span>, and <span class="textHighlight">CSS animations</span>. All viewports.</p>
                                     <div class="row justify-content-center">
@@ -244,7 +244,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+<script src="assets/javascript/javascript.js"></script>
 <script>
     $(document).ready(function () {
         $('.sidebarCollapse').on('click', function () {
