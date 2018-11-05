@@ -96,28 +96,30 @@
                     <div class="col-12 text-center align-self-top">
                         <h3 class="text-center">Leave a message</h3>
                         <small class="text-center">I'll get back to you ASAP</small>
-                        <form>
-                            <div class="input-group mb-3 udResizeText">
+                        <form method="POST" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
+                            <div class="input-group mb-3 udResizeText text-center contactForm">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">Name</span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Enter your name..." aria-label="Name" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="Enter your name..." aria-label="Name" aria-describedby="basic-addon1" id="contactName">
                             </div>
 
-                            <div class="input-group mb-3 udResizeText">
+                            <div class="input-group mb-3 udResizeText contactForm">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">Email</span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="I'll never share your email" aria-label="Email address" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="I'll never share your email" aria-label="Email address" aria-describedby="basic-addon1"  id="contactMail">
                             </div>
-
-                            <div class="input-group udResizeText">
+                            <div class="input-group udResizeText contactForm">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Message</span>
                                 </div>
-                                <textarea class="form-control" placeholder="Hello Pablo, I'm getting in touch because..." aria-label="With textarea" style="height:150px;"></textarea>
+                                <textarea class="form-control" placeholder="Hello Pablo, I'm getting in touch because..." aria-label="With textarea" style="height:150px;" id="contactMessage"></textarea>
                             </div>
                             <br>
+                            <div><span id="feedback"></span></div>
+                            <span id="contactMailCheck" style="color:red;"></span>
+                            <div style="color:red;" id="contactMessageCheck"></div>
                             <button type="submit" class="btn btn-primary" id ="ContactSubmitButton">Submit</button>
                         </form>
                     </div>
