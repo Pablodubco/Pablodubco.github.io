@@ -386,7 +386,7 @@ a{
     
     /*Center images and adjust on-screen content to the full width*/
     .udResizeText{
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
     .udSectionHeader{
         align-items: center !important;
@@ -417,8 +417,8 @@ a{
         font-size: 18px !important;
     }
     #sidebar {
-        width: 25%;
-        margin-left: -25%;
+        width: 33%;
+        margin-left: -33%;
         display: block;
     }
     #sidebar.active {
